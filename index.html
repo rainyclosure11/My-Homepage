@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John Smith — Academic Homepage</title>
+  <style>
+    :root {
+      --text: #1f2328;
+      --muted: #57606a;
+      --accent: #2c5aa0;
+      --border: #d0d7de;
+      --bg: #ffffff;
+      --chip: #eef3fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    .container { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+    h1 { margin: 0 0 0.25rem; font-size: 2rem; }
+    .subtitle { margin: 0; color: var(--muted); font-size: 1.05rem; }
+    h2 { font-size: 1.4rem; margin: 2.25rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.35rem; }
+    .authors { color: var(--muted); }
+    .pub-list { list-style: none; padding: 0; margin: 0; }
+    .pub {
+      padding: 1rem 0;
+      border-bottom: 1px solid #eaeef2;
+    }
+    .pub:last-child { border-bottom: none; }
+    .paper-title { font-weight: 600; font-size: 1.08rem; display: block; margin-bottom: 0.2rem; }
+    .meta { display: block; margin: 0.15rem 0; }
+    .venue { color: var(--accent); font-weight: 500; }
+    .status-badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.1rem 0.5rem;
+      border-radius: 999px;
+      background: var(--chip);
+      color: var(--accent);
+      margin-left: 0.35rem;
+      vertical-align: middle;
+    }
+    .code { display: block; margin-top: 0.35rem; }
+    .code a { color: var(--accent); text-decoration: none; }
+    .code a:hover { text-decoration: underline; }
+    .code .tag { font-weight: 600; }
+    .code.unreleased { color: var(--muted); }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>John Smith</h1>
+      <p class="subtitle">Researcher in Machine Learning and Natural Language Processing</p>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a researcher working on large language models, efficient fine-tuning, adaptive learning,
+        and contextual reasoning. Below is a list of my publications, including links to openly
+        released code where available.
+      </p>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ol class="pub-list">
+        <li class="pub" data-status="published" data-code="released">
+          <span class="paper-title">Enhancing Large Language Models with Advanced Fine-Tuning Techniques</span>
+          <span class="meta authors">John Smith, et al.</span>
+          <span class="meta"><span class="venue">Published at ACL 2024</span><span class="status-badge">Published</span></span>
+          <span class="meta code"><span class="tag">Code:</span> <a href="https://github.com/rainyclosure11/enhancing-llms" target="_blank" rel="noopener">https://github.com/rainyclosure11/enhancing-llms</a> (open source)</span>
+        </li>
+
+        <li class="pub" data-status="accepted" data-code="released">
+          <span class="paper-title">Adaptive Learning Strategies for Large Language Models in Dynamic Environments</span>
+          <span class="meta authors">John Smith, et al.</span>
+          <span class="meta"><span class="venue">Accepted at ICML 2025</span><span class="status-badge">Accepted</span></span>
+          <span class="meta code"><span class="tag">Code:</span> <a href="https://github.com/rainyclosure11/llm-adaptive-learning" target="_blank" rel="noopener">https://github.com/rainyclosure11/llm-adaptive-learning</a> (open source)</span>
+        </li>
+
+        <li class="pub" data-status="accepted" data-code="released">
+          <span class="paper-title">Ipsum Lorem is All You Need</span>
+          <span class="meta authors">John Smith, et al.</span>
+          <span class="meta"><span class="venue">Accepted at COML 2025 (Oral Presentation)</span><span class="status-badge">Accepted</span></span>
+          <span class="meta code"><span class="tag">Code:</span> <a href="https://github.com/rainyclosure11/ipsum-lorem-all-you-need" target="_blank" rel="noopener">https://github.com/rainyclosure11/ipsum-lorem-all-you-need</a> (open source)</span>
+        </li>
+
+        <li class="pub" data-status="accepted" data-code="not-released">
+          <span class="paper-title">Optimizing Large Language Models for Contextual Reasoning in Multi-Task Environments</span>
+          <span class="meta authors">John Smith, et al.</span>
+          <span class="meta"><span class="venue">Accepted at COAI 2025</span><span class="status-badge">Accepted</span></span>
+          <span class="meta code unreleased"><span class="tag">Code:</span> To be released (coming soon)</span>
+        </li>
+      </ol>
+    </section>
+
+    <footer>
+      <p>&copy; John Smith. Last updated: December 2025.</p>
+    </footer>
+  </div>
+</body>
+</html>
